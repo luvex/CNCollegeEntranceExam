@@ -1,4 +1,4 @@
-package org.unice.fr;
+package org.unice.fr.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,18 +7,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 /**
- * Servlet implementation class test
+ * Servlet implementation class JudgeAnswerServlet
  */
-@WebServlet("/index")
-public class test extends HttpServlet {
+@WebServlet("/JudgeAnswerServlet")
+public class JudgeAnswerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
     /**
-     * Default constructor. 
+     * @see HttpServlet#HttpServlet()
      */
-    public test() {
+    public JudgeAnswerServlet() {
+        super();
         // TODO Auto-generated constructor stub
     }
 
@@ -28,7 +28,6 @@ public class test extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
 	}
 
 	/**
@@ -37,11 +36,6 @@ public class test extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-	}
-	
-	protected String testf()
-	{
-		return "abc";
 	}
 
 }
